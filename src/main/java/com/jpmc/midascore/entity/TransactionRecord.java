@@ -20,6 +20,14 @@ public class TransactionRecord {
     @Column(nullable = false)
     private float amount;
 
+    @Column(nullable = false)
+    private float incentive;
+
+    public float getIncentive() { return incentive; }
+    public void setIncentive(float incentive) { this.incentive = incentive; }
+
+    
+
     protected TransactionRecord() {
     }
 
